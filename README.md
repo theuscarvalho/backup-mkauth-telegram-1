@@ -11,3 +11,10 @@ Altere a linha token e user de acordo com os dados do seu bot
 Obs: a rotina a cima está configurada para rodar todos os dias as 06:30 da manhã.
 
 4 - Após executar todos os passos a cima, devemos dar um reload na crontab: /etc/init.d/cron restart && sleep 4 &&  /etc/init.d/cron reload
+
+
+#######################################################################
+# DESENVOLVIDO POR: MATHEUS CARVALHO                                  #
+# PROIBIDO A COMERCIALIZAÇÃO SEM AUTORIZAÇÃO PREVIA DO DESENVOLVEDOR. #
+# E-MAIL: matheuscarvalho@bsd.com.br WEBSITE: matheuscarvalho.com.br  #
+#######################################################################
