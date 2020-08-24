@@ -1,0 +1,22 @@
+#!/bin/bash
+#########################################################################
+# DESENVOLVIDO POR MATHEUS CARVALHO                                     #
+# PROIBIDO A COMERCIALIZACAO SEM A DEVIDA AUTORIZACAO DO DESENVOLVEDOR  #
+# E-MAIL:matheuscarvalho@bsd.com.br WEBSITE: matheuscarvalho.com.br     #
+#########################################################################
+arquivo=$(cd /opt/mk-auth/bckp/ && ls -t | head -1)
+path="/opt/mk-auth/bckp/$arquivo"
+TOKEN="Cole-Aqui-O-Token-do-Bot"
+USER="Cole-Aqui-o-ID-do-Grupo-que-Recebera-os-Arquivos"
+PTIME=$(date +%H:%M:%S,%d/%m/%Y)
+NOTIFICA="SEGUE BACKUP MK-AUTH $PTIME"
+NOTIFICAERRO="ARQUIVO INVALIDO OU NAO EXISTE."
+if [ -a $path ]
+then
+curl --silent --output /dev/null "https://api.telegram.org/bot$TOKEN/sendMessage?chat_id=$USER&text=$NOTIFICA"
+sleep 5
+curl -v -F "chat_id=$USER" -F document=@/opt/mk-auth/bckp/$arquivo https://api.telegram.org/bot$TOKEN/sendDocument
+else
+curl --silent --output /dev/null "https://api.telegram.org/bot$TOKEN/sendMessage?chat_id=$USER&text=$NOTIFICAERRO"
+fi
+exit 0
