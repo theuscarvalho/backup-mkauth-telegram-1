@@ -3,17 +3,17 @@ Enviar backup do mk-auth no telegram
 
 Altere a linha token e user de acordo com os dados do seu bot
 
-1 - Coloque o arquivo enviaBkp dentro da pasta: 
-/opt/mk-auth/scripts/
+<br>1 - Coloque o arquivo enviaBkp dentro da pasta:</br>
+<p>/opt/mk-auth/scripts/</p>
 
-2 - Dê permissões de execução: 
-chmod -R 777 /opt/mk-auth/scripts/enviaBkp
+<br>2 - Dê permissões de execução: </br>
+<p>chmod -R 777 /opt/mk-auth/scripts/enviaBkp</p>
 
-3 - Crie uma rotina de execução na crontab: 
-echo "30 06 * * * root bash /opt/mk-auth/scripts/enviaBkp &" >> /etc/crontab
+<br>3 - Crie uma rotina de execução na crontab:</br>
+<p>echo "30 06 * * * root bash /opt/mk-auth/scripts/enviaBkp &" >> /etc/crontab</p>
 
 
-Obs: a rotina a cima está configurada para rodar todos os dias as 06:30 da manhã.
+<br>Obs: a rotina a cima está configurada para rodar todos os dias as 06:30 da manhã.</br>
 
 
 4 - Após executar todos os passos a cima, devemos dar um reload na crontab: /etc/init.d/cron restart && sleep 4 &&  /etc/init.d/cron reload
