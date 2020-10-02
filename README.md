@@ -20,7 +20,9 @@ Altere a linha token e user de acordo com os dados do seu bot
 
 
 #######################################################################
-# DESENVOLVIDO POR: MATHEUS CARVALHO                                  #
-# PROIBIDO A COMERCIALIZAÇÃO SEM AUTORIZAÇÃO PREVIA DO DESENVOLVEDOR. #
-# E-MAIL: matheuscarvalho@bsd.com.br WEBSITE: matheuscarvalho.com.br  #
+
+  DESENVOLVIDO POR: MATHEUS CARVALHO                                  
+  PROIBIDO A COMERCIALIZAÇÃO SEM AUTORIZAÇÃO PRÉVIA DO DESENVOLVEDOR. 
+  E-MAIL: matheuscarvalho@bsd.com.br WEBSITE: matheuscarvalho.com.br  
+  
 #######################################################################
