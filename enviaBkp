@@ -6,8 +6,8 @@
 #########################################################################
 arquivo=$(cd /opt/mk-auth/bckp/ && ls -t | head -1)
 path="/opt/mk-auth/bckp/$arquivo"
-TOKEN="Cole-Aqui-O-Token-do-Bot"
-USER="Cole-Aqui-o-ID-do-Grupo-que-Recebera-os-Arquivos"
+TOKEN="bot735710246:AAGaR-M0zsfcMaO3C3wHJPkWf8m7KmjuAYs"
+USER="-371545801"
 PTIME=$(date +%H:%M:%S,%d/%m/%Y)
 NOTIFICA="SEGUE BACKUP MK-AUTH $PTIME"
 NOTIFICAERRO="ARQUIVO INVALIDO OU NAO EXISTE."
